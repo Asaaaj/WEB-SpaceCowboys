@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--CREATED BY ADAM JURCISIN-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--USING TAILWINDCSS AND IONICONS-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <title>SPACECOWBOY</title>
+</head>
+<body>
+    <main class="min-h-screen" id="home">
+        <div class="relative herobg" style="background-image: url('assets/backgrounds/hero.png');  ;">
+
+            <!--NAVBAR section-->
+            <nav id="nav" class="z-50 flex sticky top-0 absolute text-white justify-center" style="font-family: Montserrat-Bold;">
+                <ul class="pt-2">
+                    <li class="inline-block" style="margin-right: 900px;"><a class="block" href="#home"><ion-icon name="rocket" class="text-3xl"></ion-icon></a></li>
+                    <li class="inline-block mr-10"><a id="aboutuslink" class="block text-center p-2" href="#aboutus">ABOUT US</a></li>
+                    <li class="inline-block mr-10"><a id="theteamlink" class="block text-center p-2" href="#theteam">THE TEAM</a></li>
+                    <li class="inline-block mr-10"><a id="impressionslink" class="block text-center p-2" href="#impressions">IMPRESSIONS</a></li>
+                    <li class="inline-block"><a id="contactlink" class="block text-center p-2" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+            
+            <!--HOME section-->
+            <section class="text-white text-center" style="height: 700px; font-family: Montserrat-Bold">
+                <h1 class="text-6xl pt-36"><div class="block pb-4">HEY THERE, WE ARE</div>SPACECOWBOY</h1>
+                <h2 class="text-4xl pt-8">- AN INDEPENDENT SPACE AGENCY -</h2>
+                <a href="#aboutus"><button type="button" class="mt-20 px-20 py-6 bg-gradient-to-b from-yellow-300 to-yellow-400 text-gray-700 text-xl rounded" >LEARN MORE</button></a> 
+            </section>
+
+            <!--ABOUT US section-->
+            <section class="bg-zinc-200" id="aboutus" style="height: 800px">
+                <h1 class="pt-16 text-4xl text-center text-zinc-800" style="font-family: Montserrat-Bold">A FEW FACTS ABOUT US</h1>
+                <h2 class="pt-8 text-center text-xl text-gray-700 mb-24" style="font-family: Merriweather-Light"><div>Before you do business with us,</div>you might want to know a little bit more about our company:</h2>
+                <div class="flex justify-center space-x-8">
+                    <article class="relative h-96 w-96 bg-local bg-white inline-block rounded drop-shadow-2xl animation-moveup flex justify-center">
+                        <span class="absolute bg-local bg-amber-300 h-20 w-20 -mt-12 text-gray-700 rounded-full flex justify-center"><ion-icon name="person" class="h-10 w-10 pt-5"></ion-icon></span>
+                        <h2 class="absolute mt-16 text-2xl text-zinc-700" style="font-family: Montserrat-Bold">WE ARE COWBOYS</h2>
+                        <p class="absolute mt-36 ml-8 mr-8 text-md text-center leading-relaxed" style="font-family: Merriweather-Light">You might have guessed that from our company name, but the fact is:<br>Yes, we are indeed cowboys. Cowboys who'd like to go to space.<br>Deal with it.</p>
+                    </article>
+                    <article class="relative h-96 w-96 bg-local bg-white inline-block rounded drop-shadow-2xl animation-moveup flex justify-center">
+                        <span class="absolute bg-local bg-amber-300 h-20 w-20 -mt-12 text-gray-700 rounded-full flex justify-center"><ion-icon name="hammer" class="h-10 w-10 pt-5"></ion-icon></span>
+                        <h2 class="absolute mt-16 text-2xl text-zinc-700" style="font-family: Montserrat-Bold">WE LIKE TO TINKER</h2>
+                        <p class="absolute mt-36 ml-8 mr-8 text-md text-center leading-relaxed" style="font-family: Merriweather-Light">There are a lot of things lying around on a typical Cowboy Ranch. So we started putting them together, and got really good at rocket building.</p>
+                    </article>
+                    <article class="relative h-96 w-96 bg-local bg-white inline-block rounded drop-shadow-2xl animation-moveup flex justify-center">
+                        <span class="absolute bg-local bg-amber-300 h-20 w-20 -mt-12 text-gray-700 rounded-full flex justify-center"><ion-icon name="planet" class="h-10 w-10 pt-5"></ion-icon></span>
+                        <h2 class="absolute mt-16 text-2xl text-zinc-700" style="font-family: Montserrat-Bold">WE EXPLORE SPACE</h2>
+                        <p class="absolute mt-36 ml-8 mr-8 text-md text-center leading-relaxed" style="font-family: Merriweather-Light">Once we got our first proper rocket, everything went quite fast. And now we are the #1 independent space agency in the world. <br>Who would have guessed?</p>
+                    </article>
+                </div>
+            </section>
+
+            <!--THE TEAM section-->
+            <section class="backgrounds" id="theteam" style="height: 800px; background-image: url('assets/backgrounds/the-team.png');">
+                <h1 class="pt-16 text-4xl text-center text-white" style="font-family: Montserrat-Bold">THE TEAM</h1>
+                <h2 class="pt-8 text-center text-xl text-white mb-24" style="font-family: Merriweather-Light"><div>Yep, that's us. Six fine fellows, eager to get on the next adventure.</div>Click on the pictures to get some more informations!</h2>
+                <!--ROW 1-->
+                <div class="flex justify-center space-x-8">
+                    <!--CARD1-->
+                    <article class="card-container h-48 w-96">
+                        <section id="card1" class="card" onclick="swapCard('card1')">
+                            <div class="card-front overflow-hidden flex rounded-md " style="font-family: Montserrat-Bold">
+                                <section class="h-full bg-white overflow-hidden pt-16" style="width: 50%;">
+                                    <img class="team-images" src="assets/images/harvey.png" alt="Dick Harvey">
+                                </section>
+                                <section class="h-full" style="width: 50%;">
+                                    <span class="h-full w-full bg-local bg-zinc-300 absolute opacity-30" style="z-index: -1;"></span>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: 25%;">DICK</h3>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: -5%;">HARVEY</h3>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%">CAPTAIN</p>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%;">AGE: 56</p>
+                                    <p class="text-sm" style="margin-left: 10%;">MISSIONS: 13</p>
+                                </section>
+                            </div>
+                            <div class="card-back text-center p-2 bg-gradient-to-b from-slate-900 to-slate-800 rounded-md">
+                                <h2 class="text-gray-600">DICK'S FAMOUS QUOTE:</h2>
+                                <p class="mt-6 text-xl">„This is a small step for me,</p>
+                                <p class="text-xl">but a big step for, like,</p>
+                                <p class="text-xl">a small kid”</p>
+                            </div>
+                        </section>
+                    </article>
+                    <!--CARD2-->
+                    <article class="card-container h-48 w-96">
+                        <section id="card2" class="card" onclick="swapCard('card2')">
+                            <div class="card-front overflow-hidden flex rounded-md " style="font-family: Montserrat-Bold">
+                                <section class="h-full bg-white overflow-hidden pt-16" style="width: 50%;">
+                                    <img class="team-images" src="assets/images/farhem.png" alt="Richie Farhem">
+                                </section>
+                                <section class="h-full" style="width: 50%;">
+                                    <span class="h-full w-full bg-local bg-zinc-300 absolute opacity-30" style="z-index: -1;"></span>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: 25%;">RICHIE</h3>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: -5%;">FARHEM</h3>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%">ENGINEER</p>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%;">AGE: 48</p>
+                                    <p class="text-sm" style="margin-left: 10%;">MISSIONS: 13</p>
+                                </section>
+                            </div>
+                            <div class="card-back text-center p-2 bg-gradient-to-b from-slate-900 to-slate-800 rounded-md">
+                                <h2 class="text-gray-600">FARHEM'S FAMOUS QUOTE:</h2>
+                                <p class="mt-6 text-xl">„This is a small step for me,</p>
+                                <p class="text-xl">but a big step for, like,</p>
+                                <p class="text-xl">a small kid”</p>
+                            </div>
+                        </section>
+                    </article>
+                    <!--CARD3-->
+                    <article class="card-container h-48 w-96">
+                        <section id="card3" class="card" onclick="swapCard('card3')">
+                            <div class="card-front overflow-hidden flex rounded-md " style="font-family: Montserrat-Bold">
+                                <section class="h-full bg-white overflow-hidden pt-16" style="width: 50%;">
+                                    <img class="team-images" src="assets/images/siracha.png" alt="John Siracha">
+                                </section>
+                                <section class="h-full" style="width: 50%;">
+                                    <span class="h-full w-full bg-local bg-zinc-300 absolute opacity-30" style="z-index: -1;"></span>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: 25%;">JOHN</h3>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: -5%;">SIRACHA</h3>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%">GUNSLINGER</p>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%;">AGE: 47</p>
+                                    <p class="text-sm" style="margin-left: 10%;">MISSIONS: 13</p>
+                                </section>
+                            </div>
+                            <div class="card-back text-center p-2 bg-gradient-to-b from-slate-900 to-slate-800 rounded-md">
+                                <h2 class="text-gray-600">SIRACHA'S FAMOUS QUOTE:</h2>
+                                <p class="mt-6 text-xl">„This is a small step for me,</p>
+                                <p class="text-xl">but a big step for, like,</p>
+                                <p class="text-xl">a small kid”</p>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+                <!--ROW 2-->
+                <div class="flex justify-center space-x-8 mt-8">
+                    <!--CARD4-->
+                    <article class="card-container h-48 w-96">
+                        <section id="card4" class="card" onclick="swapCard('card4')">
+                            <div class="card-front overflow-hidden flex rounded-md " style="font-family: Montserrat-Bold">
+                                <section class="h-full bg-white overflow-hidden pt-16" style="width: 50%;">
+                                    <img class="team-images" src="assets/images/mcnamera.png" alt="Bert McNamera">
+                                </section>
+                                <section class="h-full" style="width: 50%;">
+                                    <span class="h-full w-full bg-local bg-zinc-300 absolute opacity-30" style="z-index: -1;"></span>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: 25%;">BERT</h3>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: -5%;">McNAMERA</h3>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%">CAPTAIN</p>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%;">AGE: 71</p>
+                                    <p class="text-sm" style="margin-left: 10%;">MISSIONS: 13</p>
+                                </section>
+                            </div>
+                            <div class="card-back text-center p-2 bg-gradient-to-b from-slate-900 to-slate-800 rounded-md">
+                                <h2 class="text-gray-600">McNAMERA'S FAMOUS QUOTE:</h2>
+                                <p class="mt-6 text-xl">„This is a small step for me,</p>
+                                <p class="text-xl">but a big step for, like,</p>
+                                <p class="text-xl">a small kid”</p>
+                            </div>
+                        </section>
+                    </article>
+                    <!--CARD5-->
+                    <article class="card-container h-48 w-96">
+                        <section id="card5" class="card" onclick="swapCard('card5')">
+                            <div class="card-front overflow-hidden flex rounded-md " style="font-family: Montserrat-Bold">
+                                <section class="h-full bg-white overflow-hidden pt-16" style="width: 50%;">
+                                    <img class="team-images" src="assets/images/sveringe.png" alt="Al Sveringe">
+                                </section>
+                                <section class="h-full" style="width: 50%;">
+                                    <span class="h-full w-full bg-local bg-zinc-300 absolute opacity-30" style="z-index: -1;"></span>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: 25%;">AL</h3>
+                                    <h3 class="text-xl" style="margin-left: 10%; margin-top: -5%;">SVERINGE</h3>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%">CEO</p>
+                                    <p class="text-sm" style="margin-left: 10%; margin-top: 5%;">AGE: 76</p>
+                                    <p class="text-sm" style="margin-left: 10%;">MISSIONS: 13</p>
+                                </section>
+                            </div>
+                            <div class="card-back text-center p-2 bg-gradient-to-b from-slate-900 to-slate-800 rounded-md">
+                                <h2 class="text-gray-600">SVERINGES'S FAMOUS QUOTE:</h2>
+                                <p class="mt-6 text-xl">„This is a small step for me,</p>
+                                <p class="text-xl">but a big step for, like,</p>
+                                <p class="text-xl">a small kid”</p>
+                            </div>
+                        </section>
+                    </article>
+                </div>
+            </section>
+
+            <!--IMPRESSIONS section-->
+            <section class="" id="impressions" style="height: 800px; background-color: rgb(1, 8, 31);">
+                <h1 class="pt-16 text-4xl text-center text-white" style="font-family: Montserrat-Bold">LOOK AT ALL THOSE STARS!</h1>
+                <h2 class="pt-8 text-center text-xl text-white mb-24" style="font-family: Merriweather-Light">Some impressions from our trips to frickin outer space, enjoy!</h2>
+                <!--ROW 1-->
+                <article class="gallery space-y-8">
+                    <section class="flex justify-center space-x-8">
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/1.png" alt="First Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/2.png" class="relative" alt="Second Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/3.png" class="relative" alt="Third Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/4.png" class="relative" alt="Fourth Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/5.png" class="relative" alt="Fourth Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/6.png" class="relative" alt="Fourth Image"></div>
+                    </section>
+                    <!--ROW 2-->
+                    <section class="flex justify-center space-x-8">
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/7.png" class="relative" alt="Fourth Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/8.png" class="relative" alt="Fourth Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/9.png" class="relative" alt="Fourth Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/10.png" class="relative" alt="Fourth Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/11.png" class="relative" alt="Fourth Image"></div>
+                        <div class="h-48 w-48 cursor-pointer overflow-hidden"><img src="assets/images/12.png" class="relative" alt="Fourth Image"></div>
+                    </section>
+                </article>
+            </section>
+
+            <!--CONTACT section-->
+            <section class="bg-neutral-300" id="contact" style="height: 800px">
+                <h1 class="pt-16 text-4xl text-center text-zinc-800" style="font-family: Montserrat-Bold">SAY HELLO</h1>
+                <h2 class="pt-8 text-center text-xl text-gray-700" style="font-family: Merriweather-Light">Got some questions about us? Wanna do business with us?</h2>
+                <h2 class="text-center text-xl text-gray-700 mb-24" style="font-family: Merriweather-Light">Or do you just want to send us your latest cat-content - there you go:</h2>
+                <form action="#" method="#" name="contact-us" style="font-family: Montserrat-Regular; caret-color: black">
+                    <article class="flex justify-center space-x-8">
+                        <section class="space-y-8"> 
+                            <input class="w-96 p-4 pl-8 pr-8 rounded drop-shadow-md block" type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                            <input class="w-96 p-4 pl-8 pr-8 rounded drop-shadow-md block" type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                            <input class="w-96 p-4 pl-8 pr-8 rounded drop-shadow-md block" type="email" id="email" name="email" placeholder="E-Mail" required>
+                        </section>
+                        <section>
+                            <textarea class="w-96 h-full p-4 pl-8 pr-8 rounded drop-shadow-md overflow-hidden" name="message" placeholder="Your Message" style="resize: none;" required></textarea>
+                        </section>
+                    </article>
+                    <article class="flex justify-center mt-16">
+                        <input class="px-20 py-6 cursor-pointer bg-gradient-to-b from-yellow-300 to-yellow-400 text-gray-700 text-xl rounded" type="submit" value="SEND THAT MAIL" style="font-family: Montserrat-Bold;">
+                    </article>
+                </form>
+            </section>
+        </div>
+    </main>
+    <!--FOOTER-->
+    <footer class="bg-gray-700 h-40">
+        <h2 class="pt-8 text-center text-xl text-gray-500" style="font-family: Montserrat-Bold"><ion-icon class="text-4xl pr-4" name="accessibility"></ion-icon>ADAM JURCISIN</h2>
+    </footer>
+    
+</body>
+</html>
